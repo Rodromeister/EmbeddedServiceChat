@@ -33,16 +33,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://datamarssa--dev3.sandbox.my.salesforce.com',
-			'https://datamarssa--dev3.sandbox.my.site.com/',
+			'https://datamarssa--uat.sandbox.my.salesforce.com',
+			'https://datamarssa--uat.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D0Q0000000s8G',
+			'00D7a000000AcCQ',
 			'Datamars_Agents',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la3-c1cs-fra.salesforceliveagent.com/content',
 				deploymentId: '5727Q000000YuKD',
 				buttonId: '5737Q000000YvAs',
-				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Datamars_Agents',
 				isOfflineSupportEnabled: false
 			}
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://datamarssa--dev3.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://datamarssa--uat.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
